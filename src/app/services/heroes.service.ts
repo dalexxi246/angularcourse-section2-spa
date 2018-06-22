@@ -63,9 +63,13 @@ export class HeroesService {
         return this.heroes;
     }
 
+    getHeroe(id: number) {
+      return this.getHeroes()[id];
+    }
+
 }
 
-interface Heroe {
+export interface Heroe {
     nombre: string;
     bio: string;
     img: string;
