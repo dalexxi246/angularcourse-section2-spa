@@ -24,12 +24,16 @@ export class HeroeComponent {
         });
     }
 
-    getBrand(): string {
+    getBrandLogoPath(): string {
         if (this.heroe.casa === 'Marvel') {
             return 'assets/img/marvel.png';
         } else {
             return 'assets/img/dc.png';
         }
+    }
+
+    getYear(): string {
+        return this.heroe.aparicion.split('-')[0];
     }
 
 }
