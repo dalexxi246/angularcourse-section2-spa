@@ -32,8 +32,4 @@ export class HeroeComponent {
         }
     }
 
-    getYear(): string {
-        return this.heroe.aparicion.split('-')[0];
-    }
-
 }

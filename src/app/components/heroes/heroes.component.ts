@@ -11,12 +11,8 @@ export class HeroesComponent {
 
   heroes: Heroe[] = [];
 
-  constructor(private _heroesService: HeroesService) {    
+  constructor(private _heroesService: HeroesService) {
     this.heroes = _heroesService.getHeroes();
-  }
-
-  verHeroe(id: number) {
-    
   }
 
 }
