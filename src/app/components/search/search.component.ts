@@ -13,11 +13,11 @@ export class SearchComponent implements OnInit {
 
   constructor(
     private _heroesService: HeroesService,
-    private route: ActivatedRoute
+    private activatedRoute: ActivatedRoute
   ) {}
 
   ngOnInit() {
-    this.route.params.subscribe(params => {
+    this.activatedRoute.params.subscribe(params => {
       this.termino = params['termino'];
       this.heroes = this._heroesService.buscarHeroes(this.termino);
     });
